@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockeria Shop</title>
+    <!-- Font Awesome: librería de íconos -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- Estilo compartido -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Estilo de contacto -->
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+
+<body>
+
+    <!-- === Header / Menu Principal === -->
+    <header class="header">
+        <a href="index.html">
+            <img src="img/logorockeria.jpg" class="logo" alt="Logo Rockeria" width="50px" height="50px">
+        </a>
+        <div>
+            <ul id="navbar" class="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li>
+                    <a href="carrito.html">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <!-- Botón cerrar menú mobile -->
+                <a href="#" id="close" class="close">
+                    <i class="far fa-times" aria-hidden="true"></i>
+                </a>
+            </ul>
+        </div>
+        <!-- Mobiles -->
+        <div class="mobile">
+            <a href="carrito.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- === Carrito === -->
+        <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>ELIMINAR</td>
+                        <td>IMAGEN</td>
+                        <td>PRODUCTO</td>
+                        <td>PRECIO</td>
+                        <td>CANTIDAD</td>
+                        <td>SUBTOTAL</td>
+                    </tr>
+                </thead>
+                <tbody id="tabla_carrito"></tbody>
+            </table>
+        </section>
+
+        <!-- === Cupon y Total Carrito === -->
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Aplicar Cupón</h3>
+                <div>
+                    <input type="text" placeholder="Código de cupón" required>
+                    <button class="normal">Aplicar</button>
+                </div>
+            </div>
+            <div id="subtotal">
+                <h3>Total del Carrito</h3>
+                <table>
+                    <tr>
+                        <td>Tu carro de compras</td>
+                        <td id="total">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Envío</td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong id="total">$0.00</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Proceder al pago</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- === Footer === -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Reconquista 841, Banfield, Prov. de Buenos Aires</p>
+            <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+            <p><strong>Horario:</strong> 10:00 - 18:00, Lunes a Viernes</p>
+            <div class="follow">
+                <h4>Seguinos en</h4>
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Mi Cuenta</h4>
+            <a href="#">Iniciar Sesión</a>
+            <a href="#">Ver Carrito</a>
+            <a href="#">Mis Favoritos</a>
+            <a href="#">Seguimiento de Pedido</a>
+            <a href="#">Ayuda</a>
+        </div>
+        <div class="col install">
+            <h4>Descargá la App</h4>
+            <p>Desde App Store o Google Play</p>
+            <div class="row">
+                <img src="img/app.jpg" alt="App Store">
+                <img src="img/play.jpg" alt="Google Play">
+            </div>
+            <p>Plataformas de pago</p>
+            <img src="img/pay.png" alt="Métodos de Pago">
+        </div>
+        <div class="copyright">
+            <p>© 2026, Entrega Final | Talento Tech - Rockeria</p>
+        </div>
+    </footer>
+
+    <script src="script/carrito.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
