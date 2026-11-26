@@ -1,5 +1,6 @@
 # Rockeria Talento Tech
 
+Portal de comercio electrónico especializado en la venta de indumentaria y joyería de rock y heavy metal. El proyecto nace con el objetivo de centralizar en una única plataforma la oferta de productos de estilo rockero, facilitando el acceso tanto a clientes individuales como a comerciantes que buscan abastecerse
 Sitio web llevando al rock arriba, desarrollado con HTML5 y CSS. Incluye página de inicio, tienda, contacto y carro de compras.
 
 ## Estructura
